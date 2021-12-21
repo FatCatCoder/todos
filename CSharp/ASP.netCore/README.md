@@ -2,7 +2,7 @@
 Active server pages, now with c#!
 
 ## Start
-- Program.cs, is the meain entry for your api and server setup
+- Program.cs, is the main entry for your api and server setup
 - url matching to actions (controllers)
 - define middleware to handle requests (map, use, run)
 - 5197, 7006
@@ -13,3 +13,7 @@ Active server pages, now with c#!
 - [HttpGet("allProducts")] [HttpGet("product/{"id"}")]
 - Params from {id}
 - https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-6.0#verb
+
+## Database
+- Entity Framework Core as ORM for postgres
+- 

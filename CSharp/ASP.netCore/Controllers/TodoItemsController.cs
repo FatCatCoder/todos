@@ -47,7 +47,7 @@ namespace CSharp.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
         {
-            if (id != todoItem.Id)
+            if (id != todoItem.id)
             {
                 return BadRequest();
             }
@@ -81,8 +81,7 @@ namespace CSharp.Controllers
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
-            // return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
-            return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
+            return CreatedAtAction("GetTodoItem", new { id = todoItem.id }, todoItem);
         }
 
         // DELETE: api/TodoItems/5
@@ -103,7 +102,7 @@ namespace CSharp.Controllers
 
         private bool TodoItemExists(long id)
         {
-            return _context.TodoItems.Any(e => e.Id == id);
+            return _context.TodoItems.Any(e => e.id == id);
         }
     }
 }

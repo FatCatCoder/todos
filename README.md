@@ -6,3 +6,7 @@ The beloved and famous todo application implemented in various languages and fra
 - [ ] Node.js
 - [ ] Typescript + Apollo GraphQL Server
 - [ ] Java Spring Boot
+
+## Frontend Languages & Frameworks
+- [x] Blazor
+- [ ] React.js
