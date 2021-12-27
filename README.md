@@ -13,9 +13,13 @@ The beloved and famous todo application implemented in various languages and fra
 - [ ] React.js
 
 ## REST Api endpoints
+### New todo
+    POST /api/todos
 ### Get all todos
-    /api/todos
+    GET /api/todos
 ### Get a todo
-    /api/todos/{id}
-### Add Todo
-    /api/todos/new
+    GET /api/todos/{id}
+### Update todo
+    PUT /api/todos/{id}
+### Delete todo
+    DELETE /api/todos/{id}
