@@ -4,13 +4,13 @@ The beloved and famous todo application implemented in various languages and fra
 ## Backend Languages & Frameworks
 - [x] C# ASP.Net Core 6
 - [x] Python + django
-- [ ] Node.js
+- [x] Node.js + express
 - [ ] Typescript + Apollo GraphQL Server
 - [ ] Java Spring Boot
 
 ## Frontend Languages & Frameworks
 - [x] Blazor
-- [ ] React.js
+- [x] React.js
 
 ## REST Api endpoints
 ### New todo
