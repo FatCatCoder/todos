@@ -25,7 +25,7 @@ export default function TodoContainer(props) {
     <>
         {data.length? 
             <ul class="list-group shadow-5">
-                {  data.map(x => <Todo key={x.id} props={x} /> ) }
+                {  data.map(x => <Todo key={x.id} data={x} todosData={props.todosData} setTodosData={props.setTodosData}/> ) }
             </ul>
             :
             <div className='display-5 fst-italic text-center'>Hmmm... time to do something!</div>

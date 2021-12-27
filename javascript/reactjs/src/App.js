@@ -36,7 +36,7 @@ function App() {
       </header>
 
       <AddTodo />
-      <TodoContainer data={todosData}/>
+      <TodoContainer data={todosData} todosData={todosData} setTodosData={setTodosData}/>
 
     </div>
   );

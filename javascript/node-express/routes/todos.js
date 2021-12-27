@@ -27,5 +27,20 @@ router.get('/:id', (req, res) => {
     }
 });
 
+// delete a todo
+router.delete('/:id', (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const found = database.findIndex(x => x.id == id);
+        if(found) database.splice(found, 1);
+
+        return found? res.send(true) : res.send(false);
+
+    } catch (error) {
+        return res.send('Oops! Server Error.')
+    }
+});
+
 
 module.exports = router;
