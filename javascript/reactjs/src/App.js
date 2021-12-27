@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // components
+import AddTodo from './components/AddTodo'
 import TodoContainer from './components/TodoContainer'
 
 // simple todo app, inMemory basic array cache, top level api call to feed data to tree components
@@ -34,6 +35,7 @@ function App() {
         <hr class="rounded" />
       </header>
 
+      <AddTodo />
       <TodoContainer data={todosData}/>
 
     </div>
