@@ -13,6 +13,18 @@ router.get('/', (req, res) => {
     }
 });
 
+// add a todo
+router.post('/', (req, res) => {
+    try {
+        const data = req.body;
+        database.push(data);
+        return res.sendStatus(201);
+
+    } catch (error) {
+        return res.send('Oops! Server Error.')
+    }
+});
+
 // get a todo
 router.get('/:id', (req, res) => {
     try {

@@ -35,8 +35,8 @@ function App() {
         <hr class="rounded" />
       </header>
 
-      <AddTodo />
-      <TodoContainer data={todosData} todosData={todosData} setTodosData={setTodosData}/>
+      <AddTodo todosData={todosData} setTodosData={setTodosData} />
+      <TodoContainer data={todosData} todosData={todosData} setTodosData={setTodosData} />
 
     </div>
   );
