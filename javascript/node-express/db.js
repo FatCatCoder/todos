@@ -1,17 +1,17 @@
 exports.database = [
     {
         id: 1,
-        title: "build express api",
+        title: "express api",
         complete: true
     },
     {
         id: 2,
-        title: "build node api",
+        title: "make coffee",
         complete: true
     },
     {
         id: 3,
-        title: "build react ui",
+        title: "design react ui",
         complete: false
     },
 ]

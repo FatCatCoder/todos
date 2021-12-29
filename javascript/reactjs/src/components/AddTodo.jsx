@@ -12,14 +12,11 @@ export default function AddTodo(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const apiCall = await addTodo();
-    console.log(apiCall);
-    if(apiCall.status === 201) props.setTodosData([
-      ...props.todosData, {
-        id: Math.round(Math.random() * (999999 - 1) + 1),
-        title: 'random',
-        complete: false
-      }
-    ])
+
+    if(apiCall.status === 201){
+      const newTodo = await apiCall.json();
+      props.setTodosData([...props.todosData, newTodo])
+    }
   }
 
   const addTodo = async () => {
@@ -28,7 +25,7 @@ export default function AddTodo(props) {
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({
             id: Math.round(Math.random() * (999999 - 1) + 1),
-            title: 'random',
+            title: todoText,
             complete: false
           })
       })
